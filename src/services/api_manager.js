@@ -1,19 +1,28 @@
 import axios from "axios";
 
-export const getApiData = async (companies = [], models = [], years = []) => {
+export const getApiData = async (companies = "", models = "", years = "") => {
   let data;
 
-  // companies = [1, 5, 7];
-  // models = [248];
-  // years = [2021];
+  // companies = 1;
+  // models = 3;
+  // years = 3;
+  console.log(
+    "http://127.0.0.1:8000/listings?companies=" +
+      companies +
+      "&model=" +
+      models +
+      "&year=" +
+      years
+  );
+
   await axios
     .get(
       "http://127.0.0.1:8000/listings?companies=" +
-        companies.toString() +
+        companies +
         "&model=" +
-        models.toString() +
+        models +
         "&year=" +
-        years.toString()
+        years
     )
     .then((response) => {
       data = response.data;
@@ -28,7 +37,3 @@ export const postApiData = async (post_data) => {
       console.log(response.data);
     });
 };
-
-// {
-//   companies: [1,3,4,5], models = [2,4], year=[2001, 2000]
-// }

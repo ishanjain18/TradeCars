@@ -1,5 +1,10 @@
 import React from "react";
 import { getApiData } from "../services/api_manager";
+import Filter from "./filter";
+import Listing from "./listing";
+import TopBar from "./top_bar";
+
+import "../static/style.css";
 
 class Home extends React.Component {
   constructor(props) {
@@ -18,27 +23,44 @@ class Home extends React.Component {
     });
   }
 
+  onSubmit = async (fields) => {
+    // fields contains state lifted up from filter.js, state contains all values required for a POST request
+    await getApiData(
+      fields.make_name,
+      fields.car_name,
+      fields.purchase_year
+    ).then((response) => {
+      this.setState({
+        listings: response,
+      });
+    });
+  };
+
   render() {
     const { listings } = this.state;
+
     return (
       <>
-        <header>
-          <h1>Home Page</h1>
-        </header>
-        <ul>
-          {listings.map((listing) => (
-            <li key={listing.id}>
-              {listing.car_name}
-              {"---"}
-              {listing.make_name}
-              {listing.max_price}
-              {listing.min_price}
-              {listing.purchase_year}
-              {listing.seller_email}
-              {listing.seller_name}
-            </li>
-          ))}
-        </ul>
+        <TopBar header={"Trade Cars"} />
+        <div className="row1">
+          <div className="column1">
+            <Filter onSubmit={(fields) => this.onSubmit(fields)} />
+          </div>
+          <div className="column2">
+            {listings.reverse().map((listing) => (
+              <Listing
+                key={listing.id}
+                car_name={listing.car_name}
+                make_name={listing.make_name}
+                max_price={listing.max_price}
+                min_price={listing.min_price}
+                purchase_year={listing.purchase_year}
+                seller_email={listing.seller_email}
+                seller_name={listing.seller_name}
+              />
+            ))}
+          </div>
+        </div>
       </>
     );
   }
