@@ -1,6 +1,6 @@
 import React from "react";
 import { make_data, model_data } from "../static/car_data";
-import { Row, Col, Form, FloatingLabel } from "react-bootstrap";
+import { Form, FloatingLabel, Button } from "react-bootstrap";
 
 class Filter extends React.Component {
   constructor(props) {
@@ -34,27 +34,6 @@ class Filter extends React.Component {
   render() {
     return (
       <div>
-        <Row className="g-2">
-          <Col md>
-            <FloatingLabel controlId="floatingInputGrid" label="Email address">
-              <Form.Control type="email" placeholder="name@example.com" />
-            </FloatingLabel>
-          </Col>
-          <Col md>
-            <FloatingLabel
-              controlId="floatingSelectGrid"
-              label="Works with selects"
-            >
-              <Form.Select aria-label="Floating label select example">
-                <option>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </Form.Select>
-            </FloatingLabel>
-          </Col>
-        </Row>
-
         <h2 style={{ paddingBottom: "10px" }}>Filter</h2>
 
         <form onSubmit={this.handleSubmit}>
@@ -70,6 +49,7 @@ class Filter extends React.Component {
               ))}
             </Form.Select>
           </FloatingLabel>
+          <br></br>
 
           {/* Select Car Brand */}
           <FloatingLabel controlId="floatingSelectGrid" label="Select Car">
@@ -88,16 +68,9 @@ class Filter extends React.Component {
                 ))}
             </Form.Select>
           </FloatingLabel>
+          <br></br>
 
-          <select name="purchase_year" onChange={(e) => this.handleChange(e)}>
-            {Array(100)
-              .fill()
-              .map((_, index) => index + 1922)
-              .reverse()
-              .map((year) => (
-                <option value={year}>{year}</option>
-              ))}
-          </select>
+          {/* Select Year of Purchase */}
           <FloatingLabel controlId="floatingSelectGrid" label="Select Year">
             <Form.Select
               name="purchase_year"
@@ -113,8 +86,11 @@ class Filter extends React.Component {
                 ))}
             </Form.Select>
           </FloatingLabel>
+          <br></br>
 
-          <button onClick={(e) => this.handleSubmit(e)}>Submit</button>
+          <Button variant="secondary" onClick={(e) => this.handleSubmit(e)}>
+            Apply
+          </Button>
         </form>
       </div>
     );

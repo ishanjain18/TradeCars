@@ -26,6 +26,7 @@ class Admin extends React.Component {
   onSubmit = async (fields) => {
     // fields contains state lifted up from form.js, state contains all values required for a POST request
     await postApiData(fields);
+    console.log(fields);
 
     getApiData().then((response) => {
       this.setState({
