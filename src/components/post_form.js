@@ -73,7 +73,9 @@ class Postform extends React.Component {
                         model_data[value][0] === parseInt(this.state.make_name)
                     )
                     .map((car) => (
-                      <option value={model_data[car][1]}>{car}</option>
+                      <option key={car} value={model_data[car][1]}>
+                        {car}
+                      </option>
                     ))}
                 </Form.Select>
               </FloatingLabel>
@@ -127,7 +129,9 @@ class Postform extends React.Component {
                 .map((_, index) => index + 1922)
                 .reverse()
                 .map((year) => (
-                  <option value={year}>{year}</option>
+                  <option key={year} value={year}>
+                    {year}
+                  </option>
                 ))}
             </Form.Select>
           </FloatingLabel>

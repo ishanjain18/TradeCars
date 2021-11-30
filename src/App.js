@@ -5,7 +5,6 @@ import Admin from "./components/admin";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
-// Function-based component
 function App() {
   return (
     <div>
@@ -18,12 +17,5 @@ function App() {
     </div>
   );
 }
-
-// Class-based component
-// class App extends React.Component {
-//   render() {
-//     return <Header />;
-//   }
-// }
 
 export default App;
