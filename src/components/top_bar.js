@@ -9,7 +9,7 @@ class TopBar extends React.Component {
         <Navbar bg="dark" variant="dark">
           <Navbar.Brand
             style={{ fontSize: "45px", fontWeight: "300" }}
-            href="/"
+            href="/TradeCars"
           >
             <img
               alt=""
@@ -21,7 +21,7 @@ class TopBar extends React.Component {
             {this.props.header}
           </Navbar.Brand>
           <Nav>
-            <Nav.Link className="admin-btn" href="/admin">
+            <Nav.Link className="admin-btn" href="/TradeCars/admin">
               {this.props.admin}Admin
             </Nav.Link>
           </Nav>
