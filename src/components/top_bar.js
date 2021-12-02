@@ -21,7 +21,7 @@ class TopBar extends React.Component {
             {this.props.header}
           </Navbar.Brand>
           <Nav>
-            <Nav.Link className="admin-btn" href="/Admin">
+            <Nav.Link className="admin-btn" href="/TradeCars/Admin">
               {this.props.admin}Admin
             </Nav.Link>
           </Nav>
