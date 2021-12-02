@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/TradeCars/static/css/main.d14e71d1.chunk.css",
-    "main.js": "/TradeCars/static/js/main.394a4a5a.chunk.js",
-    "main.js.map": "/TradeCars/static/js/main.394a4a5a.chunk.js.map",
+    "main.js": "/TradeCars/static/js/main.12bb0ca8.chunk.js",
+    "main.js.map": "/TradeCars/static/js/main.12bb0ca8.chunk.js.map",
     "runtime-main.js": "/TradeCars/static/js/runtime-main.dd1503a6.js",
     "runtime-main.js.map": "/TradeCars/static/js/runtime-main.dd1503a6.js.map",
     "static/css/2.383c0125.chunk.css": "/TradeCars/static/css/2.383c0125.chunk.css",
-    "static/js/2.2f153e47.chunk.js": "/TradeCars/static/js/2.2f153e47.chunk.js",
-    "static/js/2.2f153e47.chunk.js.map": "/TradeCars/static/js/2.2f153e47.chunk.js.map",
+    "static/js/2.1f7235f7.chunk.js": "/TradeCars/static/js/2.1f7235f7.chunk.js",
+    "static/js/2.1f7235f7.chunk.js.map": "/TradeCars/static/js/2.1f7235f7.chunk.js.map",
     "static/js/3.bf7353f3.chunk.js": "/TradeCars/static/js/3.bf7353f3.chunk.js",
     "static/js/3.bf7353f3.chunk.js.map": "/TradeCars/static/js/3.bf7353f3.chunk.js.map",
     "index.html": "/TradeCars/index.html",
     "static/css/2.383c0125.chunk.css.map": "/TradeCars/static/css/2.383c0125.chunk.css.map",
     "static/css/main.d14e71d1.chunk.css.map": "/TradeCars/static/css/main.d14e71d1.chunk.css.map",
-    "static/js/2.2f153e47.chunk.js.LICENSE.txt": "/TradeCars/static/js/2.2f153e47.chunk.js.LICENSE.txt",
+    "static/js/2.1f7235f7.chunk.js.LICENSE.txt": "/TradeCars/static/js/2.1f7235f7.chunk.js.LICENSE.txt",
     "static/media/logo.e285822c.svg": "/TradeCars/static/media/logo.e285822c.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.dd1503a6.js",
     "static/css/2.383c0125.chunk.css",
-    "static/js/2.2f153e47.chunk.js",
+    "static/js/2.1f7235f7.chunk.js",
     "static/css/main.d14e71d1.chunk.css",
-    "static/js/main.394a4a5a.chunk.js"
+    "static/js/main.12bb0ca8.chunk.js"
   ]
 }
