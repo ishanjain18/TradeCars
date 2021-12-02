@@ -41,7 +41,7 @@ class Home extends React.Component {
 
     return (
       <>
-        <TopBar header={"Trade Cars"} />
+        <TopBar header={"Trade Cars"} button={true} />
         <div className="row1">
           <div className="column1">
             <Filter onSubmit={(fields) => this.onSubmit(fields)} />

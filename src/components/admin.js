@@ -53,7 +53,7 @@ class Admin extends React.Component {
     const { listings } = this.state;
     return (
       <div>
-        <TopBar header={"Trade Cars (Admin)"} />
+        <TopBar header={"Trade Cars (Admin)"} button={false} />
         <div className="row1">
           <div className="column1">
             <Postform onSubmit={(fields) => this.onSubmit(fields)} />

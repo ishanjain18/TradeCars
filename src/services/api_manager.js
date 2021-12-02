@@ -7,7 +7,7 @@ export const getApiData = async (companies = "", models = "", years = "") => {
   // models = 3;
   // years = 3;
   console.log(
-    "http://127.0.0.1:8000/listings?companies=" +
+    "http://ishanjain.pythonanywhere.com/listings?companies=" +
       companies +
       "&model=" +
       models +
@@ -17,7 +17,7 @@ export const getApiData = async (companies = "", models = "", years = "") => {
 
   await axios
     .get(
-      "http://127.0.0.1:8000/listings?companies=" +
+      "http://ishanjain.pythonanywhere.com/listings?companies=" +
         companies +
         "&model=" +
         models +
@@ -32,7 +32,7 @@ export const getApiData = async (companies = "", models = "", years = "") => {
 
 export const postApiData = async (post_data) => {
   await axios
-    .post("http://127.0.0.1:8000/listings/add", post_data)
+    .post("http://ishanjain.pythonanywhere.com/listings/add", post_data)
     .then((response) => {
       console.log(response.data);
     });

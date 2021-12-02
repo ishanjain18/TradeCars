@@ -21,3 +21,11 @@
   flex: 2;
   margin-top: 10px;
 }
+
+.admin-btn {
+  font-size: 30px;
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+  font-weight: 300;
+}
