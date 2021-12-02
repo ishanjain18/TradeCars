@@ -7,7 +7,7 @@ export const getApiData = async (companies = "", models = "", years = "") => {
   // models = 3;
   // years = 3;
   console.log(
-    "http://ishanjain.pythonanywhere.com/listings?companies=" +
+    "https://ishanjain.pythonanywhere.com/listings?companies=" +
       companies +
       "&model=" +
       models +
