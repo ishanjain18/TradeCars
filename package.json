@@ -1,6 +1,6 @@
 {
-  "homepage": "http://ishanjain18.github.io/TradeCars",
   "name": "trade_cars_react",
+  "homepage": "http://ishanjain18.github.io/TradeCars",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
