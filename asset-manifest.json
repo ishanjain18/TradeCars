@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/TradeCars/static/css/main.d14e71d1.chunk.css",
-    "main.js": "/TradeCars/static/js/main.63ea85fc.chunk.js",
-    "main.js.map": "/TradeCars/static/js/main.63ea85fc.chunk.js.map",
+    "main.js": "/TradeCars/static/js/main.0cb321fe.chunk.js",
+    "main.js.map": "/TradeCars/static/js/main.0cb321fe.chunk.js.map",
     "runtime-main.js": "/TradeCars/static/js/runtime-main.dd1503a6.js",
     "runtime-main.js.map": "/TradeCars/static/js/runtime-main.dd1503a6.js.map",
     "static/css/2.383c0125.chunk.css": "/TradeCars/static/css/2.383c0125.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.383c0125.chunk.css",
     "static/js/2.1f7235f7.chunk.js",
     "static/css/main.d14e71d1.chunk.css",
-    "static/js/main.63ea85fc.chunk.js"
+    "static/js/main.0cb321fe.chunk.js"
   ]
 }
