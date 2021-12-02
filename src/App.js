@@ -10,8 +10,8 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/TradeCars/" element={<Home />} />
-          <Route path="/TradeCars/admin" element={<Admin />} />
+          <Route path={process.env.PUBLIC_URL + "/"} element={<Home />} />
+          <Route path={process.env.PUBLIC_URL + "/admin"} element={<Admin />} />
         </Routes>
       </BrowserRouter>
     </div>
