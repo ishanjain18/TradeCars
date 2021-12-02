@@ -17,7 +17,7 @@ export const getApiData = async (companies = "", models = "", years = "") => {
 
   await axios
     .get(
-      "http://ishanjain.pythonanywhere.com/listings?companies=" +
+      "https://ishanjain.pythonanywhere.com/listings?companies=" +
         companies +
         "&model=" +
         models +
@@ -32,7 +32,7 @@ export const getApiData = async (companies = "", models = "", years = "") => {
 
 export const postApiData = async (post_data) => {
   await axios
-    .post("http://ishanjain.pythonanywhere.com/listings/add", post_data)
+    .post("https://ishanjain.pythonanywhere.com/listings/add", post_data)
     .then((response) => {
       console.log(response.data);
     });
