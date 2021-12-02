@@ -14,7 +14,7 @@ export const getApiData = async (companies = "", models = "", years = "") => {
       "&year=" +
       years
   );
-
+  console.log("hello");
   await axios
     .get(
       "https://ishanjain.pythonanywhere.com/listings?companies=" +
